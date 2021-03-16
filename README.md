@@ -11,11 +11,11 @@ We implement the state of the art algorithm YOLOV4 for the detection of weapons.
 </p>
   
 # Implementation Details
-All the files are provided for the implementation of YOLOV4. You can see the system setup of yolov3 [HERE](https://youtu.be/wBtiGTToVEE).This will provide the complete information that how to setup the darknet and how to run the YOLO model. To test the YOLOV3 model which is trained on dataset of weapons you can download the weights from [HERE](https://drive.google.com/drive/folders/1HtQZOXMrpM5VvhoiC70vqO7-BCGRGXvW).<br/>
+All the files are provided for the implementation of YOLOV4. You can see the system setup of YOLOV4[HERE](https://youtu.be/wBtiGTToVEE).This will provide the complete information that how to setup the darknet and how to run the YOLO model. To test the YOLOV4 model which is trained on dataset of weapons you can download the weights from [HERE](https://drive.google.com/drive/u/1/folders/1MJI0evF4G4jsmplTbDpBA5E1RdvT_rd3).<br/>
 When we say something about the configuration file we have set the batch size and subdivision equal to 64, width and height are equal to 416 momentum equal to 0.9, learning rate is equal to 0.001, max batches are equal to 4000 and steps are in between 3200 to 3600. The chart of our training model is given below:<br/>
 
 
-<img src="https://github.com/tufailshah786/Weapons-Detection-with-YOLOV3/blob/main/chart_yolov3.png" width="600" height="600"><br/><br/>
+<img src="https://github.com/tufailshah786/Weapon-Detection-With-YOLOV4/blob/main/chart_yolov4.png" width="600" height="600"><br/><br/>
 
 
 When you will see that the setup is ready then replace the YOLOV4 weights by our trained weights and you will get the results of detecting weapons like this:<br/> 
@@ -25,7 +25,7 @@ When you will see that the setup is ready then replace the YOLOV4 weights by our
 
 You can test the image by using the following command:<br/>
 
-`darknet.exe detector test cfg/weapon.data cfg/yolov3.cfg data/yolov3_final.weights data/pistol1.jpg`
+`darknet.exe detector test cfg/weapon.data cfg/yolov4.cfg data/yolov4_final.weights data/pistol1.jpg`
 
 # Dataset Details
 
